@@ -6,6 +6,6 @@ public class CashPaymentStrategy implements IPaymentStrategy {
 
     @Override
     public void makePayment(int amount) {
-        System.out.println("Payment done in Cash.");
+        System.out.println("Payment of Rs " + amount + " done in Cash.");
     }
 }

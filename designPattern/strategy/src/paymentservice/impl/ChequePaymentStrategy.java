@@ -6,7 +6,7 @@ public class ChequePaymentStrategy implements IPaymentStrategy {
 
     @Override
     public void makePayment(int amount) {
-        System.out.println("Payment done by Cheque.");
+        System.out.println("Payment of Rs " + amount + " done by Cheque.");
     }
     
 }
