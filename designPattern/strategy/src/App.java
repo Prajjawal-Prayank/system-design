@@ -8,7 +8,7 @@ public class App {
         IPaymentStrategy paymentStrategy = null;
 
         // cash payment
-        paymentStrategy = new CashPaymentStrategy();
+        paymentStrategy = new CashPaymentStrategy(); 
         paymentStrategy.makePayment(10);
 
         // credit card payment
