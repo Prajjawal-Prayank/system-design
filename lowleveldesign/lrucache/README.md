@@ -1,18 +1,3 @@
-## Getting Started
-
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+An LRU (Least Recently Used) cache is a data structure that manages a fixed-size collection of items by evicting the least recently used item when the cache reaches its capacity, ensuring that the most frequently and recently accessed items remain available.<br>
+This strategy is based on the principle that recently accessed data is likely to be accessed again soon, making it effective for optimizing performance in systems with limited memory or storage.<br>
+The following is a Java implementation using a HashMap and a Doubly Ended Queue. The queue is created within the code using a private inner class, Node.

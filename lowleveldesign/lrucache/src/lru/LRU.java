@@ -33,7 +33,7 @@ public class LRU {
         this.capacity = capacity;
 
         this.head = new Node(null, null);
-        this.tail = new Node(null,null);
+        this.tail = new Node(null, null);
 
         this.head.next = tail;
         this.tail.prev = head;
