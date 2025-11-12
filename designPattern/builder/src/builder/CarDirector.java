@@ -19,7 +19,7 @@ public class CarDirector {
             .build();
     }
 
-    public Car buildBlack7SeatCar() {
+    public Car buildBlackSevenSeatCar() {
         return carBuilder
             .colour("Black")
             .numOfSeats(7)

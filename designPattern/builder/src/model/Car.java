@@ -21,7 +21,18 @@ public class Car {
     public int getSeatCount() { return this.numOfSeats;}
     public int getYearOfManufacture() { return this.yearOfManufacture;}
 
-    public class CarBuilder {
+    @Override
+    public String toString() {
+        return new StringBuilder("Car Details")
+            .append("\nCompany :" + this.company)
+            .append("\nModel :" + this.model)
+            .append("\nColour :" + this.colour)
+            .append("\nNumber of Seats :" + this.numOfSeats)
+            .append("\nManufacture Year :" + this.yearOfManufacture)
+            .toString();
+    }
+
+    public static class CarBuilder {
         private String company;
         private String model;
         private String colour;
