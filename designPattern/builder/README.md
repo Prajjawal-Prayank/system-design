@@ -1,5 +1,5 @@
 General implementation of Builder Design Pattern. <br>
-The service has a director class which mintains the builder. The model and it's builder are defined separately.<br>
+The service has a director class which mintains the builder. The model and it's builder are defined as per needs.<br>
 <br><br>
 Some points to remember :- <br>
 - The model class itself has the builder class. <br>
