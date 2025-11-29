@@ -29,13 +29,11 @@ public class BrowserHistory {
     }
 
     /**
-     * 
+     * if history is present and it is not homepage
+     *      then update forwardHistory
      * @return the last visited page
      */
     public String back() {
-        // if history is present
-        // and it is not homepage
-        // then update forwardHistory
         if(this.history.size()>1) {
             String url = this.history.pop();
             this.forwardHistory.push(url);
@@ -45,16 +43,15 @@ public class BrowserHistory {
     }
 
     /**
-     * 
+     * if forward is present,
+     *      retrieve the forward page
+     *      update history stack
+     *      * this updates current page
+     * else
+     *      use current page directly
      * @return goes back to the page from where we came
      */
     public String forward() {
-        // if forward is present,
-        //      retrieve the forward page
-        //      update history stack
-        //      * this updates current page
-        // else 
-        //      use current page directly
         if(!this.forwardHistory.empty()) {
             String url = this.forwardHistory.pop();
             this.history.push(url);
