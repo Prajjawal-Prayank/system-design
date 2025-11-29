@@ -33,7 +33,9 @@ public class BrowserHistory {
      * @return the last visited page
      */
     public String back() {
-        // no previous is present
+        // if history is present
+        // and it is not homepage
+        // then update forwardHistory
         if(this.history.size()>1) {
             String url = this.history.pop();
             this.forwardHistory.push(url);
