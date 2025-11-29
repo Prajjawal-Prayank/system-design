@@ -1,4 +1,4 @@
-### Problem Statement
+# Problem Statement
 Design a Browser History System similar to Chrome or Firefox. Handle “Back” and “Forward” navigation. <br>
 <br>
 Design and implement a class BrowserHistory that supports: <br>
